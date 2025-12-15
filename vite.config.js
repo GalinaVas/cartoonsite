@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
- 
-// Конфиг Vite для GitHub Pages
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
-// root можно не указывать, по умолчанию '.'
-base: '/cartoonsite/', // ВАЖНО: имя репозитория c учётом регистра
-});
+  plugins: [react()],
+  base: '/cartoonsite/',
+})
